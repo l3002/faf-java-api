@@ -6,18 +6,18 @@ faf-api:
     target-directory: ${MAP_UPLOAD_PATH:build/cache/map/maps}
     directory-preview-path-small: ${MAP_PREVIEW_PATH_SMALL:build/cache/map_previews/small}
     directory-preview-path-large: ${MAP_PREVIEW_PATH_LARGE:build/cache/map_previews/large}
-    small-previews-url-format: ${MAP_SMALL_PREVIEWS_URL_FORMAT:https://content.test.faforever.com/faf/maps/previews/small/%s}
-    large-previews-url-format: ${MAP_LARGE_PREVIEWS_URL_FORMAT:https://content.test.faforever.com/faf/maps/previews/large/%s}
-    download-url-format: ${MAP_DOWNLOAD_URL_FORMAT:https://content.test.faforever.com/maps/%s}
+    small-previews-url-format: ${MAP_SMALL_PREVIEWS_URL_FORMAT:https://content.faforever.com/faf/maps/previews/small/%s}
+    large-previews-url-format: ${MAP_LARGE_PREVIEWS_URL_FORMAT:https://content.faforever.com/faf/maps/previews/large/%s}
+    download-url-format: ${MAP_DOWNLOAD_URL_FORMAT:https://content.faforever.com/maps/%s}
   mod:
-    download-url-format: ${MOD_DOWNLOAD_URL_FORMAT:https://content.test.faforever.com/faf/vault/mods/%s}
-    preview-url-format: ${MOD_PREVIEW_URL_FORMAT:https://content.test.faforever.com/faf/vault/mods/%s}
+    download-url-format: ${MOD_DOWNLOAD_URL_FORMAT:https://content.faforever.com/faf/vault/mods/%s}
+    preview-url-format: ${MOD_PREVIEW_URL_FORMAT:https://content.faforever.com/faf/vault/mods/%s}
   replay:
-    download-url-format: ${REPLAY_DOWNLOAD_URL_FORMAT:https://content.test.faforever.com/replays/%s}
+    download-url-format: ${REPLAY_DOWNLOAD_URL_FORMAT:https://content.faforever.com/replays/%s}
   tutorial:
-    thumbnail-url-format: ${TUTORIAL_THUMBNAIL_URL_FORMAT:https://content.test.faforever.com/faf/tutorials/thumbs/%s}
+    thumbnail-url-format: ${TUTORIAL_THUMBNAIL_URL_FORMAT:https://content.faforever.com/faf/tutorials/thumbs/%s}
   avatar:
-    download-url-format: ${AVATAR_DOWNLOAD_URL_FORMAT:https://content.test.faforever.com/faf/avatars/%s}
+    download-url-format: ${AVATAR_DOWNLOAD_URL_FORMAT:https://content.faforever.com/faf/avatars/%s}
     target-directory: ${AVATAR_TARGET_DIRECTORY:build/cache/avatars}
     allowed-extensions: ${AVATAR_ALLOWED_FILE_EXTENSIONS:png}
   featured-mod:
@@ -34,7 +34,7 @@ faf-api:
     forged-alliance-beta-exe-path: ${EXE_UPLOAD_BETA_PATH:build/exe/beta}
     forged-alliance-develop-exe-path: ${EXE_UPLOAD_DEVELOP_PATH:build/exe/develop}
   clan:
-    website-url-format: ${CLAN_WEBSITE_URL_FORMAT:http://clans.test.faforever.com/clan/%s}
+    website-url-format: ${CLAN_WEBSITE_URL_FORMAT:http://clans.faforever.com/clan/%s}
   mail:
     from-email-name: ${EMAIL_FROM_NAME:FAForever}
     from-email-address: ${EMAIL_FROM_ADDRESS:faf@example.com}
@@ -80,8 +80,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: http://localhost:4444/.well-known/jwks.json
-          issuer-uri: http://faf-ory-hydra:4444/
+          jwk-set-uri: https://hydra.faforever.com/.well-known/jwks.json
+          issuer-uri: https://hydra.faforever.com/
 logging:
   level:
     com.faforever.api: debug

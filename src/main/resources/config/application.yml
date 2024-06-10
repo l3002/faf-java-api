@@ -85,6 +85,9 @@ faf-api:
     thumbnail-url-format: ${TUTORIAL_THUMBNAIL_URL_FORMAT:https://content.${FAF_DOMAIN}/faf/tutorials/thumbs/%s}
   coturn:
     token-lifetime-seconds: ${COTURN_TOKEN_LIFETIME_SECONDS:86400}
+  user:
+    minimum-days-between-username-change: ${MINIMUM_DAYS_BETWEEN_USERNAME_CHANGE:30}
+    username-reservation-time-in-months: ${USERNAME_RESERVATION_TIME_IN_MONTHS:6}
 
 spring:
   application:
