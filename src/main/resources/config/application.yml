@@ -51,7 +51,7 @@ faf-api:
   mod:
     target-directory: ${MOD_UPLOAD_PATH:/content/mods}
     download-url-format: ${MOD_DOWNLOAD_URL_FORMAT:https://content.${FAF_DOMAIN}/mods/%s}
-    preview-url-format: ${MOD_PREVIEW_URL_FORMAT:https://content.${FAF_DOMAIN}/mods/%s}
+    preview-url-format: ${MOD_PREVIEW_URL_FORMAT:https://content.${FAF_DOMAIN}/mods/thumbs/%s}
     thumbnail-target-directory: ${MOD_THUMBNAIL_TARGET_DIRECTORY:/content/mods/thumbs}
     default-license-id: ${MOD_DEFAULT_LICENSE_ID:1}
   nodebb:
